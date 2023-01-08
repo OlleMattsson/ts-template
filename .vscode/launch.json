@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        /*
+            Use this to debug a jest file. Cursor should be focused in the 
+            specific file that is debugged.
+        */
+        {
+            "name": "Debug jest",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/jest",
+            "args": [
+                "${fileBasenameNoExtension}",
+                "--runInBand",
+                "--watch",
+                "--coverage=false",
+                "--no-cache"
+            ],
+            "cwd": "${workspaceRoot}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "sourceMaps": true
+        },
+    ]
+}

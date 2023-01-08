@@ -1,0 +1,1 @@
+export const testMe = (a: Boolean) => a
