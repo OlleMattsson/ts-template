@@ -5,6 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         /*
+            Set a break point somewhere in the code and use this runner to debug the main program
+        */
+        {
+            "name": "Debug program",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node",
+            "args": ["src/index.ts"],
+            "cwd": "${workspaceRoot}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "sourceMaps": true
+        },
+
+        /*
             Use this to debug a jest file. Cursor should be focused in the 
             specific file that is debugged.
         */
@@ -24,6 +39,8 @@
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "sourceMaps": true
-        },
+        }
+
+
     ]
 }
