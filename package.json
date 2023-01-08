@@ -4,6 +4,7 @@
   "description": "Template TS project",
   "main": "index.js",
   "scripts": {
+    "run": "npx ts-node src/index.ts",
     "build": "tsc",
     "test": "jest"
   },
