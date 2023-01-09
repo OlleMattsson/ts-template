@@ -4,9 +4,13 @@
 
 Fork it!
 
-Github does not allow forking repos you already own. See workarounds below.
+Github does not allow forking repos you already own. See forking workarounds below.
 
-### gh cli
+## installation
+
+`npm install`
+
+## Fork with gh cli
 
 This repo is a "template". It can be conveniently forked into a new repository using the github cli.
 
@@ -16,7 +20,7 @@ Convenient flags
 
 `gh repo create <NewForkName> --template OlleMattsson/ts-template --clone --private --include-all-branches`
 
-### manually
+## Fork manualluy
 If the above method is unavailable, a fork can be manaually created.
 
 1. Create a new repository (fork). Using web / gh cli is very convenient: `gh repo create`
